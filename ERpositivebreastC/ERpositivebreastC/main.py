@@ -2851,7 +2851,7 @@ def display_treatment_effectiveness():
         fig1 = px.bar(treatment_data, x='Treatment', y='Response Rate (%)',
                      color='Response Rate (%)', color_continuous_scale='Greens',
                      title="ER+ Treatment Response Rates")
-        fig1.update_layout(xaxis=dict(tickangle=45))
+        fig_ph_hosp.update_layout(xaxis=dict(tickangle=45))
         st.plotly_chart(fig1, use_container_width=True)
     
     with col2:
