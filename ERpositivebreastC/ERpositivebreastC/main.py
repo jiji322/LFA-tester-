@@ -2949,8 +2949,8 @@ def display_best_hospitals():
     fig_ph_hosp = px.bar(ph_hospitals.head(8), x='Hospital', y='ER+ Specialty Score',
                         color='Survival Rate (%)', color_continuous_scale='Greens',
                         title="Top Philippine Hospitals - ER+ Specialty Score")
-   fig1.update_layout(xaxis=dict(tickangle=45))
-st.plotly_chart(fig_ph_hosp, use_container_width=True)
+    fig1.update_layout(xaxis=dict(tickangle=45))
+    st.plotly_chart(fig_ph_hosp, use_container_width=True)
     
     # Detailed hospital information
     st.markdown("### 📋 Detailed Hospital Information")
